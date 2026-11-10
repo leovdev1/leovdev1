@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 50" width="900" height="50" role="img" aria-label="Ferramentas">
+  <defs>
+    <filter id="glow" x="-10%" y="-40%" width="120%" height="180%">
+      <feGaussianBlur stdDeviation="1.6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .mono { font-family: 'Courier New', ui-monospace, monospace; }
+      .line { stroke: #c9893a; stroke-width: 2; fill: none; }
+      .pad { fill: #0b0906; stroke: #e0a24a; stroke-width: 2.4; }
+      .run { stroke: #ffd27a; stroke-width: 2; fill: none; stroke-dasharray: 10 90; animation: go 3s linear infinite; }
+      @keyframes go { from { stroke-dashoffset: 100; } to { stroke-dashoffset: 0; } }
+    </style>
+  </defs>
+  <rect width="900" height="50" rx="6" fill="#0d0a06" stroke="#3a2c18" stroke-width="2"/>
+  <path class="line" d="M40 25 H330"/>
+  <path class="line" d="M570 25 H860"/>
+  <g filter="url(#glow)">
+    <path class="run" d="M40 25 H330"/>
+    <path class="run" d="M860 25 H570"/>
+  </g>
+  <circle class="pad" cx="26" cy="25" r="7"/>
+  <circle class="pad" cx="874" cy="25" r="7"/>
+  <text class="mono" x="450" y="33" fill="#fff4de" font-size="22" font-weight="700" text-anchor="middle" letter-spacing="5" filter="url(#glow)">FERRAMENTAS</text>
+</svg>

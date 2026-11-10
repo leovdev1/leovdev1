@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" width="900" height="120" role="img" aria-label="Desenvolvimento Web, Automação e Tráfego Pago">
+  <defs>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1a140c"/>
+      <stop offset="1" stop-color="#0d0a06"/>
+    </linearGradient>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3a2400"/>
+      <stop offset="1" stop-color="#241500"/>
+    </linearGradient>
+    <filter id="glow" x="-10%" y="-30%" width="120%" height="160%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="6" height="6" patternUnits="userSpaceOnUse">
+      <path d="M6 0 H0 V6" fill="none" stroke="#000" stroke-opacity=".28" stroke-width="1"/>
+    </pattern>
+    <style>
+      .mono { font-family: 'Courier New', ui-monospace, monospace; }
+      .cur { animation: blink 1s steps(1) infinite; }
+      @keyframes blink { 50% { opacity: 0; } }
+      .l1 { animation: fade 8s ease-in-out infinite; }
+      .l2 { animation: fade 8s ease-in-out infinite; animation-delay: -4s; }
+      @keyframes fade { 0%,45% { opacity: 1; } 50%,95% { opacity: 0; } 100% { opacity: 1; } }
+    </style>
+  </defs>
+
+  <rect width="900" height="120" rx="8" fill="url(#panel)" stroke="#3a2c18" stroke-width="2"/>
+
+  <!-- Barra de LEDs -->
+  <g fill="#ffb000">
+    <rect x="24" y="14" width="10" height="6"/><rect x="38" y="14" width="10" height="6"/>
+    <rect x="52" y="14" width="10" height="6"/><rect x="66" y="14" width="10" height="6"/>
+    <rect x="80" y="14" width="10" height="6"/><rect x="94" y="14" width="10" height="6"/>
+    <rect x="108" y="14" width="10" height="6" opacity=".4"/><rect x="122" y="14" width="10" height="6" opacity=".25"/>
+  </g>
+  <text class="mono" x="146" y="21" fill="#8a5a20" font-size="10" letter-spacing="2">SYS 01 · ONLINE</text>
+  <text class="mono" x="876" y="21" fill="#8a5a20" font-size="10" letter-spacing="2" text-anchor="end">LCD 32×2</text>
+
+  <!-- Tela -->
+  <rect x="24" y="30" width="852" height="76" rx="4" fill="url(#screen)" stroke="#000" stroke-width="2"/>
+  <rect x="24" y="30" width="852" height="76" rx="4" fill="url(#grid)"/>
+
+  <!-- Mensagem 1 -->
+  <g class="l1" filter="url(#glow)">
+    <text class="mono" x="450" y="62" fill="#ffb000" font-size="22" font-weight="700" text-anchor="middle" letter-spacing="6">DESENVOLVIMENTO WEB + AUTOMAÇÃO</text>
+    <text class="mono" x="450" y="92" fill="#ffb000" font-size="22" font-weight="700" text-anchor="middle" letter-spacing="6">NEXT.JS · DOCKER · SELF-HOSTED</text>
+  </g>
+
+  <!-- Mensagem 2 -->
+  <g class="l2" filter="url(#glow)">
+    <text class="mono" x="450" y="62" fill="#ffb000" font-size="22" font-weight="700" text-anchor="middle" letter-spacing="6">TRÁFEGO PAGO + MARKETING DIGITAL</text>
+    <text class="mono" x="450" y="92" fill="#ffb000" font-size="22" font-weight="700" text-anchor="middle" letter-spacing="6">DADOS · FUNIL · CONVERSÃO</text>
+    <rect class="cur" x="838" y="76" width="14" height="18" fill="#ffb000"/>
+  </g>
+</svg>
