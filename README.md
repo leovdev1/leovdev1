@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="assets/banner.svg" alt="Leonardo Vinicius" width="100%"/>
+<img src="banner.svg" alt="Leonardo Vinicius" width="100%"/>
 
-<img src="assets/lcd.svg" alt="Desenvolvimento Web, Automação e Tráfego Pago" width="100%"/>
+<img src="lcd.svg" alt="Desenvolvimento Web, Automação e Tráfego Pago" width="100%"/>
 
 </div>
 
@@ -21,7 +21,7 @@ Gosto de colocar a mão na infraestrutura: subo aplicações em VPS próprio com
 
 </div>
 
-<img src="assets/divider-ferramentas.svg" alt="Ferramentas" width="100%"/>
+<img src="divider-ferramentas.svg" alt="Ferramentas" width="100%"/>
 
 <div align="center">
 
@@ -29,11 +29,4 @@ Gosto de colocar a mão na infraestrutura: subo aplicações em VPS próprio com
 
 </div>
 
-<img src="assets/divider-contato.svg" alt="Contato" width="100%"/>
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=leovdev1&show_icons=true&hide_border=true&bg_color=0d0a06&title_color=ffb000&icon_color=c9893a&text_color=e8d9bd" alt="Estatísticas do GitHub" height="165"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=leovdev1&layout=compact&hide_border=true&bg_color=0d0a06&title_color=ffb000&text_color=e8d9bd" alt="Linguagens mais usadas" height="165"/>
-
-</div>
+<img src="divider-contato.svg" alt="Contato" width="100%"/>
